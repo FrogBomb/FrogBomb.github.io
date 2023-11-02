@@ -6,6 +6,18 @@
     <title>FrogBomb's GitHub Page</title>
 </head>
 <body>
-    <a href="/widgets/annualized-calcium-progression">Annualized Calcium Progression Calculator</a>
+    <a id="acp-link" href="/widgets/annualized-calcium-progression">Annualized Calcium Progression Calculator</a>
+    <br>
+    <br>
+    <label for="annualized-calcium-progression-widget">Widget for your website:</label>
+    <br>
+    <textarea name="annualized-calcium-progression-widget" id="annualized-calcium-progression" cols="30" rows="10" readonly>
+<object data="" type=""></object>
+    </textarea>
+
 </body>
+<script>
+    const linkLoc = (new URL(document.getElementById("acp-link").getAttribute("href"), document.location)).href;
+    document.getElementById("annualized-calcium-progression").value = `<object data="${linkLoc}" width="500" height="200"></object>`;
+</script>
 </html>
