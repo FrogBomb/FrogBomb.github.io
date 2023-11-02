@@ -1,0 +1,22 @@
+body {
+    font-family: arial, sans-serif;
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    color: rgb(94, 94, 94);
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+}
+
+h2 {
+    color: rgb(153, 110, 49);
+}
+
+textarea#result {
+    resize: none;
+}

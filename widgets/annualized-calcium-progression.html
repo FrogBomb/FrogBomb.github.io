@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Annualized Calcium Progression</title>
-    <style>
-        textarea#result {
-            resize: none;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/acp-style.css">
 </head>
 <body>
     <div id="input-fields">
-        <label for="start-date"> Start Date </label>
-        <input type="date" name="start-date" id="start-date">
+        <h2>Annualized Calcium Calculator</h2>
+        <div class="input-container">
+            <label for="start-date"> Start Date </label>
+            <input type="date" name="start-date" id="start-date">
+        </div>
+        <div class="input-container">
+            <label for="start-calcium"> Calcium Volume </label>
+            <input type="number" name="start-calcium" id="start-calcium" step=".1">
+        </div>
         <br>
-        <label for="start-calcium"> Calcium Volume </label>
-        <input type="number" name="start-calcium" id="start-calcium" step=".1">
-        <br>
-        <br>
-        <label for="end-date"> End Date </label>
-        <input type="date" name="end-date" id="end-date">
-        <br>
-        <label for="end-calcium"> Calcium Volume </label>
-        <input type="number" name="end-calcium" id="end-calcium" step=".1">
+        <div class="input-container">
+            <label for="end-date"> End Date </label>
+            <input type="date" name="end-date" id="end-date">
+        </div>
+        <div class="input-container">
+            <label for="end-calcium"> Calcium Volume </label>
+            <input type="number" name="end-calcium" id="end-calcium" step=".1">
+        </div>
     </div>
     <br>
     <textarea name="result" id="result" cols="30" rows="1" readonly placeholder="Annualized Progression"></textarea>
